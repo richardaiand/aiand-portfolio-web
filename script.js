@@ -47,7 +47,7 @@ function initCursor() {
     
     // Hover effects on interactive elements
     const interactiveElements = document.querySelectorAll(
-        'a, button, .btn, .social-link, .project-card, .skill-card, .education-card, .timeline-content, .hamburger, input, textarea'
+        'a, button, .btn, .social-link, .project-card, .education-card, .timeline-content, .hamburger, input, textarea'
     );
     
     interactiveElements.forEach(el => {
@@ -141,11 +141,9 @@ function reveal() {
 function initReveal() {
     const elementsToReveal = [
         '.section-header',
-        '.skill-card',
         '.project-card',
         '.timeline-item',
         '.education-card',
-        '.skill-bar',
         '.stat',
         '.about-text p',
         '.about-image',
@@ -160,26 +158,6 @@ function initReveal() {
     });
     
     reveal();
-}
-
-// ====================
-// Skill Bars Animation
-// ====================
-function animateSkillBars() {
-    const skillBars = document.querySelectorAll('.progress');
-    
-    skillBars.forEach(bar => {
-        const rect = bar.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        
-        if (rect.top < windowHeight - 100) {
-            const width = bar.style.width;
-            bar.style.width = '0';
-            setTimeout(() => {
-                bar.style.width = width;
-            }, 100);
-        }
-    });
 }
 
 // ====================
@@ -248,18 +226,6 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            
-            // Animate skill bars when visible
-            if (entry.target.querySelector('.progress')) {
-                const bars = entry.target.querySelectorAll('.progress');
-                bars.forEach(bar => {
-                    const width = bar.style.width;
-                    bar.style.width = '0';
-                    setTimeout(() => {
-                        bar.style.width = width;
-                    }, 200);
-                });
-            }
         }
     });
 }, observerOptions);
@@ -295,9 +261,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal').forEach(el => {
         observer.observe(el);
     });
-    
-    // Initial skill bar animation if visible
-    setTimeout(animateSkillBars, 500);
     
     // Remove typing effect for now (using CSS animation instead)
     // typeEffect();

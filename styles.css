@@ -606,127 +606,6 @@ body.clicking .cursor-dot {
 }
 
 /* ==================== */
-/* Skills Section       */
-/* ==================== */
-.skills {
-    padding: 100px 0;
-    background: var(--bg-primary);
-    position: relative;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-    margin-bottom: 80px;
-}
-
-.skill-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: 32px;
-    transition: var(--transition-medium);
-    position: relative;
-    overflow: hidden;
-}
-
-.skill-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--accent-gradient);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform var(--transition-medium);
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    background: var(--bg-card-hover);
-    border-color: rgba(0, 212, 255, 0.2);
-    box-shadow: var(--shadow-card);
-}
-
-.skill-card:hover::before {
-    transform: scaleX(1);
-}
-
-.skill-icon {
-    width: 56px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--accent-gradient);
-    border-radius: var(--radius-sm);
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    color: var(--text-primary);
-}
-
-.skill-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.skill-card p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
-
-/* Skills Bars */
-.skills-bars {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.skill-bar {
-    margin-bottom: 28px;
-}
-
-.skill-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.skill-info span:last-child {
-    color: var(--accent-primary);
-}
-
-.progress-bar {
-    height: 6px;
-    background: var(--bg-tertiary);
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.progress {
-    height: 100%;
-    background: var(--accent-gradient);
-    border-radius: 3px;
-    transition: width 1s ease;
-    position: relative;
-}
-
-.progress::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
-}
-
-/* ==================== */
 /* Projects Section     */
 /* ==================== */
 .projects {
@@ -1302,10 +1181,6 @@ body.clicking .cursor-dot {
 
     .btn {
         width: 100%;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
     }
 
     .education-card {
