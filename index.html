@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">R.</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Richard</h1>
+                <h2 class="hero-subtitle">AI Engineer at <span class="highlight">AI&</span></h2>
+                <p class="hero-description">
+                    Passionate about building intelligent systems and creating innovative solutions 
+                    that push the boundaries of artificial intelligence.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Richard">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">About Me</p>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm Richard, an AI Engineer currently working at AI&. I specialize in developing 
+                        cutting-edge machine learning models and deploying scalable AI solutions that 
+                        solve real-world problems.
+                    </p>
+                    <p>
+                        With a strong foundation in computer science and a passion for continuous learning, 
+                        I thrive in fast-paced environments where innovation is at the forefront. My expertise 
+                        spans across natural language processing, computer vision, and reinforcement learning.
+                    </p>
+                    <p>
+                        When I'm not training models or optimizing algorithms, you can find me contributing 
+                        to open-source projects, writing technical blogs, or exploring the latest advancements 
+                        in AI research.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=600&fit=crop" alt="workspace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">My Skills</p>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>TensorFlow, PyTorch, Scikit-learn, XGBoost</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>NLP</h3>
+                    <p>Transformers, BERT, GPT, Hugging Face</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>OpenCV, YOLO, CNNs, Image Processing</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <p>Python, C++, JavaScript, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & MLOps</h3>
+                    <p>AWS, GCP, Docker, Kubernetes, CI/CD</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Engineering</h3>
+                    <p>Spark, Hadoop, ETL, Data Pipelines</p>
+                </div>
+            </div>
+            <div class="skills-bars">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Machine Learning</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Deep Learning</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Data Engineering</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>MLOps</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Portfolio</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Intelligent Chatbot Platform</h3>
+                        <p>An AI-powered conversational platform built using transformer models and deployed at scale.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Computer Vision Analytics</h3>
+                        <p>Real-time object detection and tracking system for industrial quality control.</p>
+                        <div class="project-tags">
+                            <span>OpenCV</span>
+                            <span>YOLO</span>
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&h=400&fit=crop" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Predictive Analytics Engine</h3>
+                        <p>End-to-end machine learning pipeline for financial market prediction and risk analysis.</p>
+                        <div class="project-tags">
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Project 4">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Recommendation System</h3>
+                        <p>Personalized content recommendation engine using collaborative filtering and deep learning.</p>
+                        <div class="project-tags">
+                            <span>Deep Learning</span>
+                            <span>Keras</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" alt="Project 5">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AutoML Framework</h3>
+                        <p>Automated machine learning framework for rapid model selection and hyperparameter tuning.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Optuna</span>
+                            <span>MLflow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Project 6">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive real-time dashboard for visualizing and monitoring AI model performance.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Career</p>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Engineer</h3>
+                            <span class="timeline-date">2022 - Present</span>
+                        </div>
+                        <h4 class="timeline-company">AI&</h4>
+                        <p>
+                            Leading AI research and development initiatives. Designing and deploying 
+                            large-scale machine learning models for production environments. Collaborating 
+                            with cross-functional teams to integrate AI solutions into core products.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Reduced model inference time by 40% through optimization techniques</li>
+                            <li>Led a team of 5 engineers in developing a new NLP pipeline</li>
+                            <li>Published 3 research papers on transformer architectures</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Machine Learning Engineer</h3>
+                            <span class="timeline-date">2020 - 2022</span>
+                        </div>
+                        <h4 class="timeline-company">TechVision Solutions</h4>
+                        <p>
+                            Developed and maintained ML pipelines for computer vision and natural language 
+                            processing tasks. Built automated training and deployment systems using MLOps best practices.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Built an automated data annotation pipeline processing 1M+ images daily</li>
+                            <li>Implemented CI/CD for ML models reducing deployment time by 60%</li>
+                            <li>Created a real-time anomaly detection system with 99.2% accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Scientist</h3>
+                            <span class="timeline-date">2019 - 2020</span>
+                        </div>
+                        <h4 class="timeline-company">DataDriven Inc.</h4>
+                        <p>
+                            Analyzed complex datasets to extract actionable insights. Built predictive models 
+                            for customer behavior and market trends. Created interactive dashboards for stakeholders.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Increased customer retention by 25% through predictive modeling</li>
+                            <li>Developed A/B testing framework used across all product teams</li>
+                            <li>Built automated reporting saving 20+ hours per week</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Software Developer</h3>
+                            <span class="timeline-date">2018 - 2019</span>
+                        </div>
+                        <h4 class="timeline-company">StartUp Hub</h4>
+                        <p>
+                            Full-stack development with focus on backend systems. Gained foundational experience 
+                            in software engineering and data structures. Participated in agile development processes.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Developed RESTful APIs serving 100K+ daily requests</li>
+                            <li>Implemented caching layer reducing database load by 50%</li>
+                            <li>Contributed to open-source projects with 500+ GitHub stars</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Learning</p>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Master of Science in Computer Science</h3>
+                        <h4>Stanford University</h4>
+                        <p class="education-date">2016 - 2018</p>
+                        <p class="education-desc">
+                            Specialized in Artificial Intelligence and Machine Learning. 
+                            Thesis on "Deep Learning Approaches for Natural Language Understanding."
+                            GPA: 3.9/4.0
+                        </p>
+                        <div class="education-tags">
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Science in Computer Engineering</h3>
+                        <h4>MIT</h4>
+                        <p class="education-date">2012 - 2016</p>
+                        <p class="education-desc">
+                            Foundation in algorithms, data structures, and software engineering. 
+                            Minor in Mathematics. Graduated with Honors.
+                            GPA: 3.8/4.0
+                        </p>
+                        <div class="education-tags">
+                            <span>Algorithms</span>
+                            <span>Software Engineering</span>
+                            <span>Mathematics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Professional Certifications</h3>
+                        <h4>Various Institutions</h4>
+                        <p class="education-date">2018 - 2023</p>
+                        <p class="education-desc">
+                            Continuous learning through professional certifications and specialized courses 
+                            to stay current with the rapidly evolving AI landscape.
+                        </p>
+                        <div class="education-tags">
+                            <span>AWS ML Specialty</span>
+                            <span>Google Cloud Professional ML</span>
+                            <span>TensorFlow Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Work Together</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <a href="mailto:richard@example.com" class="btn btn-primary btn-large">Get In Touch</a>
+                <div class="contact-socials">
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>&copy; 2026 Richard. All rights reserved.</p>
+                <p>Built with passion and lots of coffee</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
